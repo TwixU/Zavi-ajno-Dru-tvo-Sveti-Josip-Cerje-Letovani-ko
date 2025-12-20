@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ContactPage = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const navigate = useNavigate();
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        alert('Thank you for your message! This is a demo form.');
+        // Removed alert to redirect directly
         setFormData({ name: '', email: '', message: '' });
+        navigate('/thank-you');
     };
 
     return (

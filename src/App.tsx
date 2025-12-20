@@ -8,6 +8,7 @@ import GetInvolvedPage from './pages/GetInvolvedPage';
 import ContactPage from './pages/ContactPage';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
+import ThankYouPage from './pages/ThankYouPage';
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                         <Route path="/contact" element={<ContactPage />} />
                         <Route path="/privacy" element={<PrivacyPage />} />
                         <Route path="/terms" element={<TermsPage />} />
+                        <Route path="/thank-you" element={<ThankYouPage />} />
                     </Routes>
                 </main>
                 <Footer />
